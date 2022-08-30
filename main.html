@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script defer src="main.js"></script>
     <title>Open Brewery API</title>
 
@@ -13,11 +14,11 @@
 
 <body>
     <div class="container">
-        <button type="submit" class="button">Search</button>
-        <div class="popup">
-            <h2>Brewery Details!</h2>
-            <p>Your Details are as follows!</p>
-            <button type="button">Share</button>
+        <button type="submit" class="button" onclick= "openPopUp()">Search</button>
+        <div class="popup" id="popup">
+            <h2 class="BDetails">Brewery Details!</h2>
+            <p class="p">Your Details are as follows!</p>
+            <button type="button" onclick="closePopUp()">Share</button>
 
         </div>
 
